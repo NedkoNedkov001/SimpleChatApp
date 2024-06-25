@@ -3,11 +3,12 @@ nav {
   width: fit-content;
   padding: 24px 6px;
   height: 100vh;
-  border-right: 1px solid rgba(109, 31, 255, 0.466);
+  border-right: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
   gap: 32px;
-  position: relative;
+  position: sticky;
+  top: 0px;
 }
 
 .site-logo {
@@ -52,6 +53,7 @@ nav .nav-text {
   opacity: 0;
   width: 0px;
   height: 0px;
+  overflow: hidden;
 }
 
 nav.extended .nav-text {
