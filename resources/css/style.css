@@ -1,0 +1,45 @@
+:root {
+  --color-dark-theme-1: rgba(15, 12, 41, 1);
+  --color-dark-theme-2: rgba(39, 35, 80, 1);
+  --color-dark-theme-3: rgba(36, 36, 62, 1);
+  --color-dark-theme-4: rgba(99, 95, 151, 0.178);
+  --color-light-theme-1: rgb(105, 154, 117);
+  --color-light-theme-2: rgb(113, 153, 106);
+  --color-light-theme-3: rgb(85, 136, 78);
+  --color-light-theme-4: rgb(87, 122, 87);
+
+  --color-text: rgba(231, 220, 255, 1);
+}
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    var(--color-light-theme-1) 0%,
+    var(--color-light-theme-2) 30%,
+    var(--color-light-theme-3) 100%
+  );
+}
+
+body.dark-theme {
+  background: linear-gradient(
+    90deg,
+    var(--color-dark-theme-1) 0%,
+    var(--color-dark-theme-2) 30%,
+    var(--color-dark-theme-3) 100%
+  );
+}
+
+
+.button {
+  cursor: pointer;
+  user-select: none;
+}
