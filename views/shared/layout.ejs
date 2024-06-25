@@ -2,21 +2,22 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title><%- title%></title>
   <script src="https://kit.fontawesome.com/8eb25cf744.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/list.css" />
   <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/post.css" />
 </head>
 
-<body>
-  <%- include("nav") %>
-
-  <%- include(page) %>
-
+<body class="light-theme">
+  <main>
+    <%- include("nav") %>
+    <%- include(page) %>
+  </main>
   <script src="js/main.js"></script>
 </body>
 

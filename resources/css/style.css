@@ -9,6 +9,7 @@
   --color-light-theme-4: rgb(87, 122, 87);
 
   --color-text: rgba(231, 220, 255, 1);
+  --color-border: rgba(255, 255, 255, 0.5);
 }
 
 * {
@@ -18,9 +19,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-}
 
-body {
   background: linear-gradient(
     90deg,
     var(--color-light-theme-1) 0%,
@@ -38,8 +37,26 @@ body.dark-theme {
   );
 }
 
-
 .button {
   cursor: pointer;
   user-select: none;
+}
+
+.content-wrapper {
+  padding: 32px 0px;
+  min-height: 100vh;
+  width: 80%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 12px;
+}
+
+main {
+  display: flex;
+}
+
+.avatar-icon {
+  width: 30px;
+  border-radius: 50%;
 }
